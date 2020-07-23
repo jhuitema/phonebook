@@ -10,4 +10,30 @@ with open(_VERSION_PATH) as _VERSION_FILE:
     """str: The version of the package."""
 
 
-__all__ = ["__version__"]
+from ._exceptions import (
+    MissingUserError,
+    InvalidUserError,
+    DuplicateUserError,
+)
+from ._main import (
+    create,
+    delete,
+    get,
+    read,
+    set_data_store,
+    update,
+)
+
+
+__all__ = (
+    "__version__",
+    "MissingUserError",
+    "DuplicateUserError",
+    "InvalidUserError",
+    "create",
+    "delete",
+    "get",
+    "read",
+    "set_data_store",
+    "update",
+)
