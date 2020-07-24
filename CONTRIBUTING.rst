@@ -6,6 +6,7 @@ following:
 
 .. code-block:: bash
 
+    dot (from graphviz package)
     make
     python3.6
     python3.7

@@ -25,9 +25,9 @@ def validate(user, ignore_required_fields=False):
         dict(str, str): The given `user` with unknown fields removed.
 
     Raises:
-        InvalidUserError: Raised when the given `user` does not
-            provide needed information for a user. This is not raised
-            if `ignore_required_fields` is True.
+        phonebook.InvalidUserError: Raised when the given `user` does
+            not provide needed information for a user. This is not
+            raised if `ignore_required_fields` is True.
 
     """
     user_fields = set(user.keys())
@@ -83,8 +83,8 @@ class BaseDataStore(object):
             dict(str, str): The information for the requested user.
 
         Raises:
-            MissingUserError: Raised when the requested user does not
-                exist in the data store.
+            phonebook.MissingUserError: Raised when the requested user
+                does not exist in the data store.
 
         """
         users = self.read(filters={"name": name})
@@ -127,10 +127,10 @@ class BaseDataStore(object):
                 data store.
 
         Raises:
-            InvalidUserError: Raised when the given user does not
-                provide needed information for a user.
-            DuplicateUserError: Raised when a user with the given `name`
-                already exists in the data store.
+            phonebook.InvalidUserError: Raised when the given user does
+                not provide needed information for a user.
+            phonebook.DuplicateUserError: Raised when a user with the
+                given name` already exists in the data store.
 
         """
 
@@ -143,8 +143,8 @@ class BaseDataStore(object):
                 store.
 
         Raises:
-            MissingUserError: Raised when a user with the given `name`
-                does not exist in the data store.
+            phonebook.MissingUserError: Raised when a user with the
+                given `name` does not exist in the data store.
 
         """
 
@@ -166,9 +166,9 @@ class BaseDataStore(object):
                 * **address**: The address to update the user to.
 
         Raises:
-            MissingUserError: Raised when a user with the given `name`
-                does not exist in the data store.
-            DuplicateUserError: Raised when a `name` field was given
-                that already exists in the Phonebook.
+            phonebook.MissingUserError: Raised when a user with the
+                given `name` does not exist in the data store.
+            phonebook.DuplicateUserError: Raised when a `name` field was
+                given that already exists in the Phonebook.
 
         """

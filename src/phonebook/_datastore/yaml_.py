@@ -79,10 +79,10 @@ class YAMLDataStore(base.BaseDataStore):
                 data store.
 
         Raises:
-            InvalidUserError: Raised when the given user does not
-                provide needed information for a user.
-            DuplicateUserError: Raised when a user with the given `name`
-                already exists in the data store.
+            phonebook.InvalidUserError: Raised when the given user does
+                not provide needed information for a user.
+            phonebook.DuplicateUserError: Raised when a user with the
+                given `name` already exists in the data store.
 
         """
         user = base.validate(user)
@@ -105,8 +105,8 @@ class YAMLDataStore(base.BaseDataStore):
                 store.
 
         Raises:
-            MissingUserError: Raised when a user with the given `name`
-                does not exist in the data store.
+            phonebook.MissingUserError: Raised when a user with the
+                given `name` does not exist in the data store.
 
         """
         user_index = None
@@ -140,10 +140,10 @@ class YAMLDataStore(base.BaseDataStore):
                 * **address**: The address to update the user to.
 
         Raises:
-            MissingUserError: Raised when a user with the given `name`
-                does not exist in the data store.
-            DuplicateUserError: Raised when a `name` field was given
-                that already exists in the Phonebook.
+            phonebook.MissingUserError: Raised when a user with the
+                given `name` does not exist in the data store.
+            phonebook.DuplicateUserError: Raised when a `name` field was
+                given that already exists in the Phonebook.
 
         """
         user_fields = base.validate(user_fields, ignore_required_fields=True)

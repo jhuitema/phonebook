@@ -6,4 +6,4 @@ from .yaml_ import YAMLDataStore
 
 
 DATA_STORES = (JSONDataStore, YAMLDataStore)
-"""tuple(class): The supported data stores for Phonebook."""
+"""tuple: The supported data stores for Phonebook."""

@@ -36,6 +36,7 @@ version = release.split("-", 1)[0]
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.doctest",
+    "sphinx.ext.graphviz",
     "sphinx.ext.inheritance_diagram",
     "sphinx.ext.napoleon",
     "sphinx_rtd_theme",
