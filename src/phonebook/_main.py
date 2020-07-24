@@ -4,11 +4,10 @@
 import logging
 
 from . import _datastore
-from ._datastore import json_ as json_datastore
 
 
 _DATA_STORE = None
-_DEFAULT_DATA_STORE = json_datastore.JSONDataStore
+_DEFAULT_DATA_STORE = _datastore.DATA_STORES[0]
 _LOGGER = logging.getLogger(__name__)
 
 
