@@ -19,6 +19,7 @@ class JSONDataStore(base.BaseDataStore):
     """The JSON data store used to access the information for Phonebook."""
 
     _DEFAULT_PATH = os.path.expandvars("$HOME/phonebook.json")
+    NAME = "json"
 
     def __init__(self, file_path=None):
         """Initialize the data store.

@@ -19,6 +19,7 @@ class YAMLDataStore(base.BaseDataStore):
     """The YAML data store used to access the information for Phonebook."""
 
     _DEFAULT_PATH = os.path.expandvars("$HOME/phonebook.yaml")
+    NAME = "yaml"
 
     def __init__(self, file_path=None):
         """Initialize the data store.

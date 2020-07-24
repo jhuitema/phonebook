@@ -67,6 +67,10 @@ class BaseDataStore(object):
     single result is available to your data store (e.g. a database ONE
     query), the :meth:`get` method can be overloaded.
 
+    When subclassing make sure to define the "NAME" attribute for your
+    class. This attribute is used by the CLI to allow the CLI user to
+    choose their backend.
+
     """
 
     def get(self, name):

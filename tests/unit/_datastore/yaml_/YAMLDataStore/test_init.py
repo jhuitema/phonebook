@@ -25,6 +25,13 @@ def test_with_empty_file(data_store_path):
     assert data_store._users == []
 
 
+def test_name(data_store_path):
+    """Test the data store has a name defined."""
+    assert not data_store_path.exists()
+    data_store = YAMLDataStore(file_path=str(data_store_path))
+    assert data_store.NAME == "yaml"
+
+
 def test_with_single_user(data_store_path):
     """Test creating a data store when the YAML file contains one user."""
     data_set = [
