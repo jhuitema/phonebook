@@ -15,6 +15,16 @@ quickly accomplish common tasks.
     :local:
 
 
-.. todo::
+How to Use a Different Data Store
+=================================
 
-    Fill in this section.
+You can use a different data store using the ``data-store`` argument:
+
+.. code-block:: bash
+
+    phonebook --data-store yaml read
+
+.. note::
+
+    Note that data entered into one data store is not transferred into
+    the other.

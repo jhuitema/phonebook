@@ -16,8 +16,3 @@ of how this package works. Start with the :ref:`getting_started` and
     :titlesonly:
 
     api/phonebook/index
-
-
-.. todo::
-
-    Fill in this section.

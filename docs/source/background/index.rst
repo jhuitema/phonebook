@@ -15,24 +15,26 @@ and potential alternatives.
 Genesis
 *******
 
-.. todo::
-
-    Write this section.
+This package was created as a toy project to demonstrate my skills.
 
 
 *********
 Use Cases
 *********
 
-.. todo::
+This package is made to manage user entries containing the following:
 
-    Write this section.
+* name
+* phone number
+* address
 
+The package supports adding, removing, and updating records. The package
+also allows querying the added users using a simple filter syntax. The
+package provides adding, removing, updating, and filtering records
+through both the CLI and the API.
 
-****************
-Related Projects
-****************
+The package supports serializing the user data in multiple formats: JSON
+and YAML.
 
-.. todo::
-
-    Write this section.
+The output of the CLI is displayed in 2 or more output formats: JSON and
+YAML.

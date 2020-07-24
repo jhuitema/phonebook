@@ -15,8 +15,7 @@ through a series of steps to use this package. Start here if you’re new
 to this package.
 
 .. toctree::
-    :maxdepth: 3
-    :titlesonly:
+    :maxdepth: 2
 
     getting_started/index
 
@@ -50,7 +49,6 @@ section.
     :titlesonly:
 
     reference/index
-    glossary
 
 
 Background
